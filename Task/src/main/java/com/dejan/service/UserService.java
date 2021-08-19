@@ -1,10 +1,11 @@
 package com.dejan.service;
 
 import com.dejan.model.User;
+import com.dejan.repository.UserRepo;
 
 import java.util.List;
 
-public interface UserService {
+public interface UserService extends UserRepo{
 
     User save(User user);
     void delete(Long id);
